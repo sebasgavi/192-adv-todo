@@ -112,7 +112,6 @@ html, body {
 
 .content__tareas {
   width: 100%;
-  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

@@ -1,0 +1,129 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+    &__content{
+        width: 100%;
+        flex-basis: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgb(235, 235, 235);
+    }
+
+}
+
+.content{
+
+        &__title{
+                color: rgb(224, 168, 168);
+                font-size: 8em;
+                font-weight: 100;
+        }
+
+        &__caja{
+            display: flex;
+            flex-basis: 50%;
+            height: 50%;
+            width: 50%;
+            flex-direction: column;
+            
+        }
+
+        &__herramientas{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: white;
+            height: 15%;
+            flex-basis: 15%;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px  rgb(206, 219, 217) solid;
+            border-top: none;
+
+            & p{
+                margin: 0;
+            }
+        }
+
+        &__superior{
+        display: flex;
+        flex-basis: 15%;
+        height: 15%;
+        width: 100%;
+        }
+
+        &__selTodas{
+            background: white;
+            flex-basis: 10%;
+            width: 10%;
+            height: 100%;  
+            border: 1px  rgb(206, 219, 217) solid;
+        }
+
+        &__input{
+          flex-basis: 90%;
+          width: 90%;
+          height: 100%;  
+        }
+
+        &__tareas{
+            width: 100%;
+            display: none;
+            flex-direction: column;
+
+        }
+
+        &__tarea{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            width: 100%;
+            border: 1px  rgb(206, 219, 217) solid;
+            border-top: none;
+            flex-basis: 50px;
+            border-radius: 5px;
+            
+            &:hover .content__cerrar{
+                    color: crimson;
+            }
+        }
+
+        &__label{
+            font-size: 2em;
+            font-weight: 100;
+            border: none;
+            width: 80%;
+            height: 100%;
+            text-align: center;
+        }
+        &__cb{
+            margin-left: 1.5%;            
+        }
+
+        &__completadas{
+            &:hover{
+                text-decoration: underline;
+                cursor: pointer;
+             }
+        }
+        &__cerrar{
+            color: rgba(220, 20, 60, 0);
+            margin-right: 10%;
+            border: none;
+            background-color: rgba(240, 248, 255, 0);
+        }
+}
